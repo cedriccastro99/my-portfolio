@@ -1,0 +1,84 @@
+.main-contact {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background: rgb(0, 30, 60);
+}
+
+.main-container-contact {
+    /* background-color: #ADEFD1FF; */
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+}
+
+.main-contact-content {
+    /* border: solid green 2px; */
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-content {
+    /* border: solid magenta 2px; */
+    width: 100%;
+    height: auto;
+    padding: 2em auto;
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-header {
+    color: #ADEFD1FF;
+    text-align: center;
+}
+
+.contact-card {
+    height: 15em;
+    width: 20%;
+    margin: 1em;
+    background: rgb(0, 114, 228);
+    border: solid 2px rgb(5, 5, 5);
+    border-radius: 1em;
+    transition: transform .2s ease-in-out;
+}
+
+.contact-card:hover {
+    box-shadow: 0 0 1em #ADEFD1FF;
+    transform: scale(1.1);
+}
+
+.contact-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.github-logo {
+    padding: 1em;
+    margin:0 auto;
+    border-radius: 1em;
+    background-color: aliceblue;
+}
+
+.buttons button {
+    margin: auto .25em;
+}
+
+@media (max-width : 768px){
+    .contact-content {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .contact-card {
+        height: 20em;
+        width: auto;
+        min-width: 40%;
+        margin: .5;
+    }
+}

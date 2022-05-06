@@ -1,0 +1,102 @@
+
+.main-home {
+    background: url('../assets/images/pexels-neo-2653362.jpg');
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* position: relative; */
+}
+
+.main-container-home {
+    margin: 0 auto;
+    max-width: 80%;
+    min-width: 220px;
+    height: 100vh;
+}
+
+.text-container {
+    font-weight: 700;
+    font-size: 10rem;
+    color: white;
+}
+
+.text-container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1em;
+}
+
+.jojen {
+    height: 50%;
+    width: auto;
+}
+
+.dev {
+    height: 50%;
+    width: auto;
+    margin-top: -8rem;
+    margin-left: 2.7rem;
+}
+
+
+@media (max-width : 690px){
+    .main-container-home {
+        max-width: 90%;
+    }
+}
+
+@media (max-width : 790px) {
+    .text-container {
+        font-size: 7rem;
+    }
+
+    .dev {
+        margin-top: -5rem;
+        margin-left: 0;
+    }
+
+    .text-container-flex {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width : 425px) {
+    .text-container {
+        font-size: 6rem;
+        padding: 1.5em 0;
+    }
+
+    .dev {
+        margin-top: -5rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width : 375px) {
+    .text-container {
+        font-size: 5rem;
+        padding: 2em 0;
+    }
+
+    .dev {
+        margin-top: -4rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width : 320px) {
+    .text-container {
+        font-size: 4rem;
+        padding: 3em 0;
+    }
+
+    .dev {
+        margin-top: -3rem;
+        margin-left: 0;
+    }
+}
