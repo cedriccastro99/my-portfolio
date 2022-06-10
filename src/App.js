@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-import { BrowserRouter as Router, Routes , Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ToastContainer } from 'react-toastify'
 
 import NavigationBar from './component/NavigationBar';
 import Home from './component/Home';
@@ -11,19 +12,26 @@ import Contact from './component/Contact';
 
 function App() {
   return (
-    <Router>
-      <NavigationBar/>
-      <Home/>
-      <About/>
-      <Projects/>
-      <Contact/>
-        {/* <Routes>
-          <Route exact path="/" element={<Home/>} />
-          <Route exact path="/about" element={<About/>} />
-          <Route exact path="/projects" element={<Projects/>} />
-          <Route exact path="/contact" element={<Contact/>} />
-        </Routes> */}
-    </Router>
+    <>
+      <Router>
+        <NavigationBar/>
+        <Home/>
+        <About/>
+        <Projects/>
+        <Contact/>
+      </Router>
+      <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+      />
+    </>
   );
 }
 

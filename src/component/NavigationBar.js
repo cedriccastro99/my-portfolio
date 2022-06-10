@@ -8,12 +8,11 @@ import './NavigationBar.css'
 import { FaCode } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 
-// import { Link } from 'react-router-dom'
-
 const NavigationBar = () => {
 
   const [navBar,setNavBar] = useState(false);
   const navBarChangeBackground = () =>{
+
     if(window.scrollY >= 100){
       setNavBar(true)
     }else{
@@ -22,8 +21,6 @@ const NavigationBar = () => {
   }
 
   window.addEventListener('scroll',navBarChangeBackground)
-
-  //navlink style = style={{ borderBottom : '3px solid yellow' }}
 
   return (
     <>  
