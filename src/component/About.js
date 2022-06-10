@@ -20,10 +20,10 @@ const About = () => {
               <h1>Hello! I'm Cedric Trillo Castro</h1>
               <p>
                 {
-                  `</
-                    A Information Technology student at Caraga Student University (CSU), Ampayon Butuan City.
+                  `<
+                    A Information Technology student at Caraga State University (CSU), Ampayon Butuan City.
                   A self-learn full-stack developer, that learns through online and  project development 
-                  >`
+                    />`
                 }
               </p>
             </div>
