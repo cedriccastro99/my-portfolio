@@ -21,7 +21,7 @@ const About = () => {
               <p>
                 {
                   `<
-                    A Information Technology student at Caraga State University (CSU), Ampayon Butuan City.
+                    An Information Technology student at Caraga State University (CSU), Ampayon Butuan City.
                   A self-learn full-stack developer, that learns through online and  project development 
                     />`
                 }
